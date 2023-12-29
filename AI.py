@@ -1,4 +1,3 @@
-pip install assemblyai
 import assemblyai as aai
 
 aai.settings.api_key = "28af214d30bc482da80c11743451527c"
