@@ -1,7 +1,7 @@
-!pip install nltk
-!pip install regex
-!pip install random
-!pip install string
+pip install nltk
+pip install regex
+pip install random
+pip install string
 
 import nltk
 import re
