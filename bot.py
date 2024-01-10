@@ -14,6 +14,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 stop_words = set(nltk.corpus.stopwords.words('english'))
 st.write("welcome to Bot")
+
 def sentence_tokenizer(data):
    # Function for Sentence Tokenization
    return nltk.sent_tokenize(data.lower())
@@ -58,6 +59,7 @@ while True:
       #print('Chatbot: Goodbye!')
       st.write('Chatbot: Goodbye!')
       break
+   st.write('Chatbot: ',f(user_input))
    # Tokenize the User Input
    user_input_tokenized = word_tokenizer(user_input)
    # Remove Stop Words
