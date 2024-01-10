@@ -52,7 +52,8 @@ while True:
    user_input = input("You: ")
    # End the Loop if the User Says Bye or Goodbye
    if user_input.lower() in ['bye', 'goodbye']:
-      print('Chatbot: Goodbye!')
+      #print('Chatbot: Goodbye!')
+      st.write('Chatbot: Goodbye!')
       break
    # Tokenize the User Input
    user_input_tokenized = word_tokenizer(user_input)
@@ -61,4 +62,5 @@ while True:
    # Process Query and Generate Response
    chatbot_response = generate_response(user_input_nostops)
    # Print Response
-   print('Chatbot:', chatbot_response)
+   #print('Chatbot:', chatbot_response)
+   st.write('Chatbot:', chatbot_response)
