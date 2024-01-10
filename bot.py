@@ -7,6 +7,8 @@ import string
 
 from string import punctuation
 
+#st.text_input("Your name", key="name")
+
 # Download stopwords from nltk
 nltk.download('punkt')
 nltk.download('stopwords')
@@ -49,7 +51,8 @@ conversation_history = []
 responses = [response for pattern, response in patterns]
 while True:
    # User Input
-   user_input = input("You: ")
+   # user_input = input("You: ")
+   user_input=st.text_input("Your:  ")
    # End the Loop if the User Says Bye or Goodbye
    if user_input.lower() in ['bye', 'goodbye']:
       #print('Chatbot: Goodbye!')
