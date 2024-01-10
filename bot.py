@@ -1,4 +1,4 @@
-
+import streamlit as st
 
 import nltk
 import re
@@ -11,7 +11,7 @@ from string import punctuation
 nltk.download('punkt')
 nltk.download('stopwords')
 stop_words = set(nltk.corpus.stopwords.words('english'))
-
+st.write("welcome to Bot")
 def sentence_tokenizer(data):
    # Function for Sentence Tokenization
    return nltk.sent_tokenize(data.lower())
